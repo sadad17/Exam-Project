@@ -1,0 +1,70 @@
+.HeaderButton{
+    height: 66.32px;
+    width: 121px;
+    background-color: #000000;
+    color: white;
+    font-size: 30px;  }
+   
+header{
+    height: 110px;
+    background-color: #F49F0A;
+    justify-content: space-between;
+
+}
+
+
+
+.headerbackground {
+    background-image:url("images/backgroundheader.jpg");
+    height: 399px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headertitle{ 
+    background-color: rgb(204, 236, 236);
+    height: 188px;
+    width: 550px;
+    font-size: 50px;
+   text-align: center;
+}
+
+.headerinfo {
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    width: 90%;
+}
+
+.headerstores{
+    font-size: 36px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+.stores {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 36px;
+}
+.view {
+    height: 48px;
+    width: 121px;
+    font-size: 30px;
+    color: red;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    border-color: red;
+}
