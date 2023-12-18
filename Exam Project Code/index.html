@@ -9,13 +9,13 @@
 
 </head>
 <body> 
-    <header>
+    <header id="headerSection">
         <div>
-        <button class="HeaderButton">Home</button>
+        <button class="HeaderButton" onclick="window.location.href='index.html'">Home</button>
     </div>
     <div>
-        <button class="HeaderButton">Recipes</button>
-        <button class="HeaderButton">Culture</button>
+        <button class="HeaderButton" onclick="scrollToRecipes()">Recipes</button>
+        <button class="HeaderButton" onclick="scrollToCulture()">Culture</button>
     </div>
     </header>
     <section class="headerbackground">
@@ -34,23 +34,24 @@
         <article class="store">
         <img src="images/bazarvest.jpg"> <br>
         Bazar Vest <br>
-        <button class="view">View</button>
+        <button class="view" onclick="window.location.href='bazarvest.html'">View</button>
         </article>
+        
         <article class="store">
         <img src="images/goasia.jpg"> <br>
         Go Asia <br>
-        <button class="view">View</button>
+        <button class="view" onclick="window.location.href='goasia.html'">View</button>
         </article>
         <article class="store">
         <img src="images/dubaimarket.jpg"> <br>
         Dubai Market <br>
-        <button class="view">View</button>
+        <button class="view" onclick="window.location.href='dubai.html'">View</button>
         </article>
     </section>
 
     <hr> 
 
-    <div class="headerrecipes"><img src="images/Cookbook.png" alt="">Suggested Asian Recipes:</div>
+    <div class="headerrecipes" id="recipesSection"><img src="images/Cookbook.png" alt="">Suggested Asian Recipes:</div>
 
     <section class="Sectionrecipes"> 
 
@@ -110,7 +111,7 @@
 
     <hr> 
 
-    <div class="headerculture"><img src="images/cultureicon.jpg" alt="">Explore Asian Food Culture:</div>
+    <div class="headerculture" id="cultureSection"><img src="images/cultureicon.jpg" alt="">Explore Asian Food Culture:</div>
     
     <section class="culturepic">
 
@@ -172,7 +173,7 @@
             <div class="cultureinfo-header">Evolution of Asian Fusion:</div>
             <div class="cultureinfo-text">
                 Modern Asian fusion cuisine is a dynamic intersection of tradition and innovation, blending flavors and techniques from different regions.
-                <u lclass="innertext">
+                <ul class="innertext">
                     <li>Nobu Matsuhisa (Japan): Renowned chef Nobu Matsuhisa seamlessly blends Japanese and Peruvian ingredients at his world-famous Nobu restaurants, creating a global culinary phenomenon.</li>
                     <li>Molecular Gastronomy (Asia): Explore the avant-garde world of molecular gastronomy, where chefs experiment with scientific techniques to transform traditional Asian ingredients into innovative dishes.</li>
                 
@@ -194,8 +195,30 @@
         </div>
         <div class="copywrite">© [2023] [All rights reserved by Abu Sadad]</div>
         <div> 
-            <button class="HeaderButton">Header</button>
+            <button class="HeaderButton" onclick="scrollToHeader()">Header</button>
         </div>
     </div>
+
+    <script>
+        function scrollToRecipes() {
+            var recipesSection = document.getElementById('recipesSection');
+            if (recipesSection) {
+                recipesSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function scrollToCulture() {
+            var cultureSection = document.getElementById('cultureSection');
+            if (cultureSection) {
+                cultureSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        function scrollToHeader() {
+            var headerSection = document.getElementById('headerSection');
+            if (headerSection) {
+                headerSection.scrollIntoView({ behavior: 'smooth' });
+            }
+             }
+    </script>
 </body>
 </html>

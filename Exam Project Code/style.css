@@ -19,7 +19,7 @@
 
 header{
     height: 100px;
-    background-color: #B7FFBA;
+    background-color: rgb(255, 0, 0, 50%);
     display: flex;
     justify-content: space-between;
    
@@ -36,7 +36,7 @@ header{
 
 .headertitle{ 
     border-radius: 10px;
-    background-color: rgb(172, 216, 170, 65%);
+    background-color:rgb(245,245,245,65%);
     height: 188px;
     width: 550px;
     font-size: 50px;
@@ -84,18 +84,26 @@ hr{
     font-size: 36px;
     padding-bottom: 30px;
 }
+
 .view {
     height: 48px;
     width: 121px;
     font-size: 30px;
     color: red;
-    background-color: white;
+    box-sizing: border-box;
+    background-color: whitesmoke;
     border-radius: 30px;
     border-color: red;
     margin-top: 15px;
     font-family: 'raleway', serif;
     font-weight: normal;
-    
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+    border: 2px solid #F00;
+}
+
+.view:hover {
+    text-decoration: none;
 }
 
 
@@ -147,7 +155,7 @@ hr{
 .culturepic {
     background-image: url("images/asianculture.jpg");
     height: 993px;
-    width: 1350px;
+    width: auto;
     margin: auto; 
     margin-top: 4%;
     margin-bottom: 4%;
@@ -197,7 +205,7 @@ hr{
 .footer {
     width:100%; 
     height: 110px;
-    background-color: #B7FFBA;
+    background-color: rgb(255, 0, 0, 50%);
     display: flex;
     justify-content: space-between;
     font-family: 'raleway', serif;
@@ -215,3 +223,218 @@ hr{
 
 
 
+
+
+    @media screen and (max-width: 744px) {
+
+.HeaderButton{
+    width: auto;
+    background-color: #000000;
+    color: white;
+    font-size: 25px; 
+    border-radius: 10px;
+    font-family: 'raleway', serif;
+    font-weight:lighter;
+ }
+    
+
+
+
+
+header{
+    height: 100px;
+    background-color: rgb(255, 0, 0, 50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerbackground {
+    background-image:url("images/backgroundheader.jpg");
+    height: 399px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headertitle{ 
+    border-radius: 10px;
+    background-color:rgb(245,245,245,40%);
+    height: 188px;
+    width: 550px;
+    font-size: 50px;
+   text-align: center;
+   font-family: 'raleway', serif;
+    font-weight:bold;
+}
+
+.headerinfo {
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'average sans', sans-serif;
+    font-weight: lighter;
+}
+
+hr{
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.headerstores, .headerrecipes, .headerculture{
+    padding: 10px;
+    font-size: 36px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-family: 'raleway', serif;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.stores{
+    margin-top: 20px;
+    display:inline;
+    justify-content:center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 30px;
+}
+.view {
+    height: 48px;
+    width: 121px;
+    font-size: 30px;
+    color: red;
+    background-color: white;
+    border-radius: 30px;
+    border-color: red;
+    margin-top: 15px;
+    font-family: 'raleway', serif;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.ingredients {
+    font-family: 'raleway', serif;
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.inglist{
+    font-family: 'average sans', sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+
+}
+
+.Sectionrecipes {
+    display: inline;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+}
+
+.recipes {
+    padding: 5%;
+    width: auto;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-family: 'raleway', serif;
+    font-weight: bolder;
+}
+
+.ingredients {
+    width:auto;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'raleway', serif;
+    font-weight: normal;
+    background-color: whitesmoke;
+}
+
+.culturepic {
+    background-image: url("images/asianculture.jpg");
+    height: 993px;
+    width: auto;
+    margin: auto; 
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.cultureinfo {
+    padding: 20px;
+    text-align: justify;
+}
+
+.cultureinfo-section {
+    margin-bottom: 30px;
+}
+
+.cultureinfo-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'raleway', serif;
+    font-weight: bold;
+    color: red;
+
+}
+
+.cultureinfo-text {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'average sans', sans-serif;
+    font-weight: normal;
+
+}
+.innertext{
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-family: 'average sans', sans-serif;
+  
+
+}
+.footer .lefttext .copywrite{
+    font-family: 'raleway', serif;
+}
+.footer {
+    width:auto; 
+    height: 110px;
+    background-color: rgb(255, 0, 0, 50%);
+    font-family: 'raleway', serif;
+    font-weight:normal;
+}
+
+.footer .copywrite {
+  align-items: center;
+  font-family: 'raleway', serif;
+  font-weight:lighter;
+  font-size:small;
+  position:absolute;
+  margin-left: 25%;
+  padding-left: 4.5%;
+ }
+  
+  .footer .lefttext,
+  .footer .HeaderButton {
+      display: none;
+
+    }  }
