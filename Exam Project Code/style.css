@@ -13,7 +13,10 @@
     font-weight:lighter;
  }
     
-
+ .headertitle:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
 
 
 
@@ -97,12 +100,14 @@ hr{
     margin-top: 15px;
     font-family: 'raleway', serif;
     font-weight: normal;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     cursor: pointer;
     border: 2px solid #F00;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .view:hover {
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.2);
     text-decoration: none;
 }
 
@@ -141,6 +146,12 @@ hr{
     font-family: 'raleway', serif;
     font-weight: bolder;
 }
+
+.recipes:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
 
 .ingredients {
     width:350px;
